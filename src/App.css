@@ -1,38 +1,55 @@
+/* App.css para TP6 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  background-color: #f4f5f7; /* Fondo gris muy clarito como en la captura */
+}
+
+.App-contenido {
+  flex-grow: 1; /* Esto empuja el footer hacia abajo */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 50px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.contenedor-botones {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn-verde {
+  background-color: #5cb85c; /* Verde un poco más suave y moderno */
   color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-verde:hover {
+  background-color: #4cae4c;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.texto-resultado {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
 }
